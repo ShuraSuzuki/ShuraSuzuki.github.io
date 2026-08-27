@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shura Robotics</title>
+<meta name="description" content="Shura Suzuki, Assistant Professor at the Research Institute of Electrical Communication, Tohoku University. Research on decentralized control, bio-inspired robotics, and animal locomotion.">
+<meta name="author" content="Shura Suzuki">
+<link rel="canonical" href="https://shura-suzuki.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Shura Robotics">
+<meta property="og:description" content="Shura Suzuki, Assistant Professor at the Research Institute of Electrical Communication, Tohoku University. Research on decentralized control, bio-inspired robotics, and animal locomotion.">
+<meta property="og:url" content="https://shura-suzuki.github.io/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Schibsted+Grotesk:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>
+/* Set theme + language before first paint to avoid a flash. */
+(function () {
+  try {
+    var t = localStorage.getItem("theme");
+    if (t) document.documentElement.setAttribute("data-theme", t);
+    var l = localStorage.getItem("lang");
+    if (!l) l = (navigator.language || "en").toLowerCase().indexOf("ja") === 0 ? "ja" : "en";
+    if (l === "ja") {
+      document.documentElement.classList.add("lang-ja");
+      document.documentElement.setAttribute("lang", "ja");
+    }
+  } catch (e) {}
+})();
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Shura&nbsp;Robotics</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html"><span data-lang="en">Home</span><span data-lang="ja">ホーム</span></a>
+      <a href="publications.html"><span data-lang="en">Publications</span><span data-lang="ja">成果</span></a>
+      <a href="cv.html"><span data-lang="en">CV</span><span data-lang="ja">経歴</span></a>
+      <span class="tools">
+        <button class="tool-btn" type="button" data-lang-toggle>日本語</button>
+        <button class="tool-btn" type="button" data-theme-toggle aria-label="Toggle theme"></button>
+      </span>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+  <section class="hero wrap">
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow"><span data-lang="en">Research Institute of Electrical Communication, Tohoku University</span><span data-lang="ja">東北大学 電気通信研究所</span></p>
+        <h1><span data-lang="en">Shura Suzuki</span><span data-lang="ja">鈴木 朱羅</span></h1>
+        <p class="name-alt"><span data-lang="en">鈴木 朱羅</span><span data-lang="ja">Shura Suzuki</span></p>
+        <p class="role"><strong><span data-lang="en">Assistant Professor</span><span data-lang="ja">助教</span></strong></p>
+        <p class="role"><span data-lang="en">Research Institute of Electrical Communication, Tohoku University</span><span data-lang="ja">東北大学 電気通信研究所</span></p>
+
+        <p class="statement" data-bi="pages.hero_statement"></p>
+
+        <ul class="linkrow" id="linkrow"></ul>
+      </div>
+
+      <figure class="portrait" style="margin:0">
+        <!-- 写真を差し替えるときは assets/img/portrait.jpg を置き換えてください
+             （表示は 240×300。原本は portrait-original.jpg に残してあります） -->
+        <img src="assets/img/portrait.jpg" alt="Shura Suzuki" width="553" height="720">
+      </figure>
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">News</p>
+        <h2><span data-lang="en">Recent updates</span><span data-lang="ja">最近の活動</span></h2>
+      </div>
+    </div>
+    <ul class="news" id="news"></ul>
+    <noscript><span class="nojs">This page renders its content with JavaScript. Please see <a href="https://researchmap.jp/shura-suzuki">researchmap</a> or <a href="https://scholar.google.com/citations?user=c3urSIcAAAAJ">Google Scholar</a>.</span></noscript>
+  </section>
+
+  <section class="section wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Publications</p>
+        <h2 id="papers-heading"></h2>
+      </div>
+      <a class="more" href="publications.html"><span data-lang="en">Full list &rarr;</span><span data-lang="ja">研究成果 &rarr;</span></a>
+    </div>
+    <ul class="pubs" id="selected-pubs"></ul>
+  </section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; <span id="year">2026</span> Shura Suzuki<span data-lang="ja">（鈴木 朱羅）</span></p>
+    <nav>
+      <a href="index.html"><span data-lang="en">Home</span><span data-lang="ja">ホーム</span></a>
+      <a href="publications.html"><span data-lang="en">Publications</span><span data-lang="ja">成果</span></a>
+      <a href="cv.html"><span data-lang="en">CV</span><span data-lang="ja">経歴</span></a>
+      <a href="https://researchmap.jp/shura-suzuki" target="_blank" rel="noopener">researchmap</a>
+    </nav>
+  </div>
+</footer>
+<script src="data/site-data.js"></script>
+<script src="assets/js/edit.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

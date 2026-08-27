@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="6" fill="#15616d"/>
+  <g stroke="#fdfcfa" stroke-width="1.9" stroke-linecap="round" fill="none">
+    <!-- spine -->
+    <path d="M7 16c3-4 5 4 9 0s5 4 9 0"/>
+    <!-- four limbs -->
+    <path d="M9 15.5 7.5 22M14.5 16.5 13 23M19.5 15.5 18 22M24.5 16.5 23 23"/>
+  </g>
+  <g fill="#7fd4de">
+    <circle cx="7.5" cy="22" r="1.5"/><circle cx="13" cy="23" r="1.5"/>
+    <circle cx="18" cy="22" r="1.5"/><circle cx="23" cy="23" r="1.5"/>
+  </g>
+</svg>
