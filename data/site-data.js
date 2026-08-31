@@ -59,10 +59,6 @@ window.SITE = {
     papers_heading: {
       en: "Recent papers",
       ja: "最近の論文"
-    },
-    research_intro: {
-      en: "Four intertwined lines of work, all circling the same question: <b>how does coherent movement arise without anyone being in charge?</b>",
-      ja: "互いに絡みあう4つのテーマは，すべて同じ問いを巡っています．<b>指揮者なしに，いかにして整合的な動きが立ち上がるのか．</b>"
     }
   },
 
