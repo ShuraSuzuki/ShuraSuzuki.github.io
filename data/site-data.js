@@ -14,14 +14,14 @@ window.SITE = {
   //   show_media    … トップの「研究室の外へ」（メディア掲載）
   //   show_contact  … トップの「連絡先」
   //                   ※ 消しても上のリンクの並びから Email は送れます
+  // home_papers … トップの論文欄に何を出すか。
+  //   "featured" … researchmap の「重要な業績」にチェックした論文
+  //   "recent"   … 新しい順（件数は home_papers_count）
+  //   ※ 見出しの文言は pages.papers_heading で別に決めます
   settings: {
     show_research: false,
     show_media: false,
     show_contact: false,
-
-    // トップページの論文欄に何を出すか。
-    //   "featured" … researchmap の「重要な業績」にチェックした論文
-    //   "recent"   … 新しい順（件数は home_papers_count）
     home_papers: "featured",
     home_papers_count: 5
   },
@@ -65,6 +65,22 @@ window.SITE = {
   /* ---------- 最近の活動  ※ researchmap から自動生成（表示は直近1年） ---------- */
   news: [
     {
+      date: "2026-09",
+      en: "Gave an invited talk, “融通無碍な振る舞いを生み出す動物の全身運動制御の理解に向けて”, at Adaptive behavior and its ecological foundations (ABEF)・ Adaptive Motion of Animals and Machines (AMAM-Japan).",
+      ja: "Adaptive behavior and its ecological foundations (ABEF)・ Adaptive Motion of Animals and Machines (AMAM-Japan)にて招待講演「融通無碍な振る舞いを生み出す動物の全身運動制御の理解に向けて」を行いました．",
+      ja_only: true
+    },
+    {
+      date: "2026-09",
+      en: "Presented “Three-Dimensional Musculoskeletal Modeling of the Crocodilian Hindlimb Incorporating a Muscular Branching Structure” at SICE Festival 2026 with Annual Conference.",
+      ja: "SICE Festival 2026 with Annual Conference で「Three-Dimensional Musculoskeletal Modeling of the Crocodilian Hindlimb Incorporating a Muscular Branching Structure」を発表しました．"
+    },
+    {
+      date: "2026-09",
+      en: "Started タフ・サイバーフィジカルAI研究プロジェクト as Principal Investigator.",
+      ja: "タフ・サイバーフィジカルAI研究プロジェクト（研究代表者）を開始しました．"
+    },
+    {
       date: "2026-07",
       en: "Sensory-driven neck–limb coordination mechanisms for walk-trot-gallop gait transitions appeared in <em>Scientific Reports</em>.",
       ja: "「Sensory-driven neck–limb coordination mechanisms for walk-trot-gallop gait transitions」が <em>Scientific Reports</em> に掲載されました．",
@@ -86,6 +102,11 @@ window.SITE = {
       date: "2026-04",
       en: "Presented “Multi-articulated Vehicle That Mimics Caterpillar Swarm Locomotion” at RoboSoft 2026.",
       ja: "RoboSoft 2026 で「Multi-articulated Vehicle That Mimics Caterpillar Swarm Locomotion」を発表しました．"
+    },
+    {
+      date: "2026-03",
+      en: "Started 国内研究助成 as Principal Investigator.",
+      ja: "国内研究助成（研究代表者）を開始しました．"
     },
     {
       date: "2026-01",
@@ -141,11 +162,6 @@ window.SITE = {
       en: "Bicycle-inspired simple balance control method for quadruped robots in high-speed running appeared in <em>Frontiers in Robotics and AI</em>.",
       ja: "「Bicycle-inspired simple balance control method for quadruped robots in high-speed running」が <em>Frontiers in Robotics and AI</em> に掲載されました．",
       link: "https://doi.org/10.3389/frobt.2024.1473628"
-    },
-    {
-      date: "2024-09",
-      en: "Started 東北大学タフ・サイバーフィジカルAI研究センター タフ・サイバーフィジカルAI研究プロジェクト as Principal Investigator.",
-      ja: "東北大学タフ・サイバーフィジカルAI研究センター タフ・サイバーフィジカルAI研究プロジェクト（研究代表者）を開始しました．"
     }
   ],
 
@@ -282,6 +298,13 @@ window.SITE = {
   invited: [
     {
       year: 2026,
+      date: "2026-09",
+      title: "融通無碍な振る舞いを生み出す動物の全身運動制御の理解に向けて",
+      venue: "Adaptive behavior and its ecological foundations (ABEF)・ Adaptive Motion of Animals and Machines (AMAM-Japan)",
+      ja_only: true
+    },
+    {
+      year: 2026,
       date: "2026-05",
       title: "イモムシ群の奇妙な移動様式に着想を得た 群ロボットの開発",
       venue: "東北大学 タフ･サイバーフィジカル AI研究センター シンポジウム",
@@ -324,6 +347,21 @@ window.SITE = {
 
   /* ---------- 国際会議発表  ※ researchmap から自動生成 ---------- */
   conference: [
+    {
+      year: 2026,
+      date: "2026-09",
+      title: "Three-Dimensional Musculoskeletal Modeling of the Crocodilian Hindlimb Incorporating a Muscular Branching Structure",
+      venue: "SICE Festival 2026 with Annual Conference",
+      authors: [
+        "Shura Suzuki",
+        "Kazuki Ito",
+        "Takahiro Goto",
+        "Kentaro Chiba",
+        "Yasuhiro Sugimoto",
+        "Akio Ishiguro",
+        "Tetsuya Kinugasa"
+      ]
+    },
     {
       year: 2026,
       date: "2026-04",
@@ -613,7 +651,7 @@ window.SITE = {
 
   /* ---------- 件数など  ※ researchmap から自動生成 ---------- */
   stats: {
-    domestic_talks: 34
+    domestic_talks: 36
   },
 
 
@@ -686,6 +724,30 @@ window.SITE = {
 
   /* ---------- 外部資金  ※ researchmap から自動生成 ---------- */
   grants: [
+    {
+      period: "2026–2027",
+      start: "2026-09",
+      title_en: "イモムシ群から学ぶ大柔軟変形ロボットの設計原理",
+      title_ja: "イモムシ群から学ぶ大柔軟変形ロボットの設計原理",
+      scheme_en: "タフ・サイバーフィジカルAI研究プロジェクト",
+      scheme_ja: "タフ・サイバーフィジカルAI研究プロジェクト",
+      role_en: "Principal Investigator",
+      role_ja: "研究代表者",
+      grant_number: "",
+      ja_only: true
+    },
+    {
+      period: "2026–2027",
+      start: "2026-03",
+      title_en: "ロボット憑依による生成AIの言語理解",
+      title_ja: "ロボット憑依による生成AIの言語理解",
+      scheme_en: "国内研究助成",
+      scheme_ja: "国内研究助成",
+      role_en: "Principal Investigator",
+      role_ja: "研究代表者",
+      grant_number: "",
+      ja_only: true
+    },
     {
       period: "2025–2026",
       start: "2025-09",
@@ -840,6 +902,11 @@ window.SITE = {
       period: "2025–",
       en: "Publicity Chair, DARS 2026 The 18th International Symposium on Distributed Autonomous Robotic Systems Organizing Committee",
       ja: "DARS 2026 The 18th International Symposium on Distributed Autonomous Robotic Systems Organizing Committee Publicity Chair"
+    },
+    {
+      period: "2025–2027",
+      en: "Finance Chair, SICE Festival 2027 with Annual Conference Organizing Committee",
+      ja: "SICE Festival 2027 with Annual Conference Organizing Committee Finance Chair"
     },
     {
       period: "2025–",
